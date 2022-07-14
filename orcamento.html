@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Orçamento | Bikcraft </title>
   <meta name="description" content="Termos e Concições.">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preload" href="./css/style.css" as="style">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
@@ -39,11 +39,13 @@
       </div>
 
     </div>
-    <form class="orcamento container" action="./">
+    <form class="orcamento container" action="./orcamento.html">
       <div class="orcamento-produto">
         <h2 class="font-1-xs cor-c5">Bikcraft ou Seguro?</h2>
+
         <input type="radio" name="tipo" value="bikcraft" id="bikcraft">
         <label for="bikcraft">Bikcraft</label>
+
         <input type="radio" name="tipo" value="seguro" id="seguro">
         <label for="seguro">Seguro</label>
 
@@ -98,7 +100,7 @@
 
       </div>
       <div class="orcamento-dados form">
-        <h2 class="font-1-cs cor-c9 col-2">dados pessoais</h2>
+        <h2 class="font-1-xs cor-c9 col-2">dados pessoais</h2>
         <div>
           <label for="nome">Nome</label>
           <input type="text" id="nome" name="nome">
@@ -115,7 +117,7 @@
           <label for="email">Email</label>
           <input type="email" id="email" name="email">
         </div>
-        <h2 class="font-1-cs cor-c9 col-2">entrega</h2>
+        <h2 class="font-1-xs cor-c9 col-2">entrega</h2>
         <div>
           <label for="cep">CEP</label>
           <input type="text" id="cep" name="cep">
@@ -127,10 +129,6 @@
         <div>
           <label for="logradouro">Logradouro</label>
           <input type="text" id="logradouro" name="logradouro">
-        </div>
-        <div>
-          <label for="cep">CEP</label>
-          <input type="text" id="cep" name="cep">
         </div>
         <div>
           <label for="bairro">Bairro</label>
